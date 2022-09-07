@@ -8,7 +8,8 @@
 - i have made it using docker with nginx, mysql 5.7, php 7.4 with laravel framework
 
 ## how to make it work 
-- open cmd in project dir
+- open power shell in project dir
+- run command `docker run --rm -v ${PWD}:/app composer install`
 - run command `docker-compose build --no-cache`
 - then run command `docker-compose up -d`
 - then run command `docker-compose exec app php artisan key:generate`
